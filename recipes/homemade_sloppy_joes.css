@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 60.5%;
+    scroll-behavior: smooth;
+    color: #aaa;
+}
+
+body {
+    background-color: #5555;
+}
+
+.title {
+    width: 100%;
+    height: 10em;
+    display: grid;
+    place-content: center;
+    padding: 10rem;
+}
+
+.title h1 {
+    text-align: center;
+    font: 900 7rem Montserrat, sans-serif;
+    padding: 0.3rem;
+    color: #555;
+}
+
+.recipe {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+    background-color: #8885;
+    display: grid;
+    grid-auto-flow: row;
+    place-content: center;
+    justify-content: center;
+    border-radius: 5em;
+}
+
+.img-div {
+    margin: 5rem auto;
+}
+
+.img-div img{
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+.prep-time {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5rem;
+    background-color: #5555;
+}
+
+.prep-time p {
+    font: 500 3rem Nunito, sans-serif;
+    margin: 0 5rem;
+    text-align: center;
+    color: #444;
+}
+
+.ingredients {
+    display: grid;
+    place-content: center;
+    margin: 5rem 0;
+    color: #444;
+}
+
+.ingredients h2 {
+    font: 900 5rem Montserrat, sans-serif;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.ingredients li {
+    font: 500 3rem Nunito, sans-serif;
+    margin: 5rem 0;
+}
+
+.steps {
+    padding: 5rem;
+    color: #444;
+}
+
+.steps h2 {
+    font: 900 5rem Montserrat, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.steps li {
+    font: 500 3rem Nunito, sans-serif;
+    list-style: none;
+    margin: 5rem 0;
+}
+
+.bold {
+    font-weight: 900;
+    color: #111;
+}
