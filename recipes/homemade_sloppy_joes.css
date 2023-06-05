@@ -193,3 +193,70 @@ footer {
 .fa-github:hover {
     color: #171515;
 }
+
+/* MEDIA QUERIES SECTION START */
+
+@media (max-width: 850px) {
+    html {
+        font-size: 45%;
+    }
+
+    .title h1 {
+        font-size: 5rem;
+    }
+
+    .img-div img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .prep-time {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .prep-time p {
+        text-align: start;
+    }
+
+    .ingredients h2 {
+        font-size: 5rem;
+    }
+
+    .steps h2 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 35%;
+    }
+
+    .title h1 {
+        font-size: 4rem;
+        width: 100vw;
+    }
+
+    .img-div img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .prep-time {
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prep-time p {
+        padding: 0.5rem;
+    }
+
+    .ingredients {
+        padding: 0 5rem;
+    }
+}
+
+/* MEDIA QUERIES SECTION END */
