@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik&display=swap');
 
+:root {
+    --background-color: #5555;
+    --background-color2: #8885;
+    --font-color: #555;
+    --font-color2: #5555;
+    --font-color3: #444;
+    --font-color4: #111;
+}
+
 *,
 ::before,
 ::after {
@@ -12,11 +21,11 @@
 html {
     font-size: 60.5%;
     scroll-behavior: smooth;
-    color: #aaa;
+    color: var(--font-color);
 }
 
 body {
-    background-color: #5555;
+    background-color: var(--background-color);
 }
 
 .title {
@@ -31,14 +40,14 @@ body {
     text-align: center;
     font: 900 7rem Montserrat, sans-serif;
     padding: 0.3rem;
-    color: #555;
+    color: var(--font-color);
 }
 
 .recipe {
     width: 90%;
     margin: auto;
     margin-bottom: 5rem;
-    background-color: #8885;
+    background-color: var(--background-color2);
     display: grid;
     grid-auto-flow: row;
     place-content: center;
@@ -61,27 +70,27 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 5rem;
-    background-color: #5555;
+    background-color: var(--font-color2);
 }
 
 .prep-time p {
     font: 500 3rem Nunito, sans-serif;
     text-align: center;
-    color: #444;
+    color: var(--font-color3);
 }
 
 .ingredients {
     display: grid;
     place-content: center;
     margin: 5rem 0;
-    color: #444;
+    color: var(--font-color3);
 }
 
 .ingredients h2 {
     font: 900 6rem Montserrat, sans-serif;
     margin-top: 5rem;
     text-align: center;
-    color: #111;
+    color: var(--font-color4);
 }
 
 .ingredients li {
@@ -91,14 +100,14 @@ body {
 
 .steps {
     padding: 5rem;
-    color: #444;
+    color: var(--font-color3);
 }
 
 .steps h2 {
     font: 900 6rem Montserrat, sans-serif;
     text-align: center;
     margin: 0;
-    color: #111;
+    color: var(--font-color4);
 }
 
 .steps li {
@@ -109,5 +118,78 @@ body {
 
 .bold {
     font-weight: 900;
-    color: #111;
+    color: var(--font-color4);
+}
+
+footer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color2);
+    border-radius: 5em;
+    margin: 10em auto 3rem auto;
+    padding: 1rem;
+}
+
+.page-information ul {
+    font: 500 2rem Nunito, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+.page-information li a {
+    text-decoration: none;
+    color: var(--font-color);
+    text-align: center;
+}
+
+.page-information li a:hover {
+    text-decoration: underline;
+}
+
+.copyright-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.copyright-section p {
+    text-align: center;
+    font: 500 2rem Nunito, sans-serif;
+    color: var(--font-color);
+}
+
+.social {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding: 1rem;
+}
+
+.social i {
+    font-size: 4rem;
+    color: var(--font-color);
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-linkedin-in:hover {
+    color: #0072b1;
+}
+
+.fa-github:hover {
+    color: #171515;
 }
