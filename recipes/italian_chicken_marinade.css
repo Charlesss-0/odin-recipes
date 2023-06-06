@@ -257,6 +257,10 @@ footer {
     .ingredients {
         padding: 0 5rem;
     }
+
+    .page-information ul {
+        gap: 5rem;
+    }
 }
 
 /* MEDIA QUERIES SECTION END */

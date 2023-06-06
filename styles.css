@@ -256,5 +256,18 @@ footer {
         width: 300px;
         height: 200px;
     }
+
+    .page-information ul,
+    .copyright-section p {
+        font-size: 2.5rem;
+    }
+
+    .page-information ul {
+        gap: 5rem;
+    }
+
+    .social i {
+        font-size: 4.5rem;
+    }
 }
 /* MEDIA QUERIES SECTION END */
